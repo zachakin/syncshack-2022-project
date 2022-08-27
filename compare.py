@@ -5,6 +5,16 @@ from populate_options import algos
 table = Element("tb").element
 
 def compare_guess(*args):
+
+    # Count Guesses
+    table_length = js.document.querySelector("table")
+    guesses_total = table_length.rows.length
+    if(guesses_total > 8):
+        print("Game Over")
+        return
+    guesses_string = str(guesses_total) + "/8"
+    pyscript.write("count", guesses_string)
+    
     # Get guess selection
     guess = algos[int(Element("selectNumber").element.value)]
 
@@ -33,16 +43,16 @@ def compare_guess(*args):
     
     if guess.id == algos[random_algo].id:
         # Correct guess
-        name_td.className = "table-success"
-        ds_td.className = "table-success"
-        tc_td.className = "table-success"
+        name_td.className = "bg-success"
+        ds_td.className = "bg-success"
+        tc_td.className = "bg-success"
         # sc_td.className = "table-success"
     else:
         # Incorrect guess
         if guess.data_structure == algos[random_algo].data_structure:
-            ds_td.className = "table-success"
+            ds_td.className = "bg-success"
         if guess.time_complexity == algos[random_algo].time_complexity:
-            tc_td.className = "table-success"
+            tc_td.className = "bg-success"
         # if guess.space_complexity == algos[random_algo].space_complexity:
         #     sc_td.className = "table-success"
         

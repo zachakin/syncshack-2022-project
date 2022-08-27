@@ -1,9 +1,9 @@
 body {
-    background-color:  #15202B;
+    background-color: white;
 }
 
 h1 {
-    color: white;
+    color: black;
     font-size: 100px;
     font-family: montserrat, sans-serif;
     font-style: italic;
@@ -14,7 +14,7 @@ h1 {
 }
 
 h5 {
-    color: #8899A6;
+    color: black;
     font-family: montserrat, sans-serif;
     font-style: normal;
     font-weight:800;
@@ -24,7 +24,7 @@ h5 {
 }
 
 select{
-    width: 50%px;
+    width: 50%;
     font-family: sans-serif;
     margin-top: 8%;
     border-color: #8899A6;
@@ -42,15 +42,15 @@ option:hover {
 }
 
 th {
-    color: #8899A6;
+    color: black;
     font-family: montserrat, sans-serif;
 }
 
 td {
-    color: white;
+    color: black;
     font-family: montserrat, sans-serif 
 }
 
 #count {
-    color:white
+    color:black
 }
