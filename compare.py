@@ -1,8 +1,16 @@
 from random_algo import random_algo
 import js
+import math
 from populate_options import algos
 
 table = Element("tb").element
+
+
+def complex_eval(o):
+    o = o[2:len(o) - 1]
+    o.replace("^", "**").replace("n", "10000").replace("log", "math.log")
+    return eval(o)
+
 
 def compare_guess(*args):
     # Get guess selection
@@ -41,9 +49,23 @@ def compare_guess(*args):
         # Incorrect guess
         if guess.data_structure == algos[random_algo].data_structure:
             ds_td.className = "table-success"
+        
         if guess.time_complexity == algos[random_algo].time_complexity:
             tc_td.className = "table-success"
-        # if guess.space_complexity == algos[random_algo].space_complexity:
-        #     sc_td.className = "table-success"
+        elif complex_eval(guess.time_complexity) > complex_eval(algos[random_algo].time_complexity):
+            pass  # time complexity is worse
+        elif complex_eval(guess.time_complextiy) > complex_eval(algos[random_algo].time_complexity):
+            pass  # time complexity is better
+        else:
+            pass    # how tf did you get here?
+
+        if guess.space_complexity == algos[random_algo].space_complexity:
+            tc_td.className = "table-success"
+        elif complex_eval(guess.space_complexity) > complex_eval(algos[random_algo].space_complexity):
+            pass  # space complexity is worse
+        elif complex_eval(guess.space_complextiy) > complex_eval(algos[random_algo].space_complexity):
+            pass  # space complexity is better
+        else:
+            pass    # how tf did you get here?
         
     table.appendChild(tr)
