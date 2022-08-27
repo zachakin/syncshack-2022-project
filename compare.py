@@ -18,11 +18,10 @@ def compare_complexity(guess,actual):
 def compare_guess(*args):
 
     # Count Guesses
-    guesses_total = Element("tbl").element.rows.length
-    if(guesses_total > 8):
-        print("Game Over")
+    guesses_total = 8 - Element("tbl").element.rows.length
+    if(guesses_total < 0):
         return
-    guesses_string = str(guesses_total) + "/8"
+    guesses_string = str(guesses_total)
     pyscript.write("count", guesses_string)
     
     # Get guess selection

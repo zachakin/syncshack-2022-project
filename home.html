@@ -18,12 +18,19 @@
                 - ./compare.py
         </py-env>
 
-        <!-- Title -->
-        <h1>ALG<span style="color: #ff0000">LE</span></h1>
-        <h5>Guess the Algorithm</h3>
+        <div class="topgrid">
+            <!-- Count Guesses -->
+            <div id="counter">
+                <p><span id="count">8 </span> <br> Guesses <br> Remaining</p>
+            </div>
 
-         <!-- Count Guesses -->
-        <div id="count"></div>
+            <div>
+                <!-- Title -->
+                <h1>ALG<span style="color: #ff0000">LE</span></h1>
+                <h5>Guess the Algorithm</h3>
+            </div>
+         
+        </div>
 
         <!-- Toggle Light/Dark Mode -->
         <button class="btn btn-primary" onclick="toggle_light()">Toggle Light/Dark Mode</button>
@@ -44,6 +51,7 @@
             </div>
 
             <!-- Guess Table -->
+            <div>
             <table class="table table-bordered" id="tbl">
                 <thead>
                 <tr>
@@ -56,6 +64,7 @@
                 <tbody id="tb">
                 </tbody>
             </table>
+            </div>
         </div>
     </body>
 </html>
