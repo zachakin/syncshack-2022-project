@@ -18,7 +18,7 @@ def reset(*args):
     js.localStorage.setItem("has_won","False")
    
     # Reset table
-    tb = js.document.getElementById("tb")
-    tb.innerHTML = ""
+    answer = js.document.getElementById("answer")
+    answer.innerHTML = ""
 
 reset()
