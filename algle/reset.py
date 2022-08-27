@@ -1,6 +1,6 @@
 import random
-from populate_options import algos
 import js
+from populate_options import algos
 
 def reset(*args):
     # Get new random number that represents key of algorithm in dictionary
@@ -20,5 +20,9 @@ def reset(*args):
     # Reset table
     tb = js.document.getElementById("tb")
     tb.innerHTML = ""
+
+    # Reset answer
+    answer = js.document.getElementById("answer")
+    answer.innerHTML = ""
 
 reset()
