@@ -1,10 +1,14 @@
 from random_algo import random_algo
 import js
 from populate_options import algos
+from random_algo import gc
 
-table = Element("tb").element
+tbody = Element("tb").element
 
 def compare_guess(*args):
+    if Element("tbl").element.rows.length > 8:
+        return
+
     # Get guess selection
     guess = algos[int(Element("selectNumber").element.value)]
 
@@ -46,4 +50,4 @@ def compare_guess(*args):
         # if guess.space_complexity == algos[random_algo].space_complexity:
         #     sc_td.className = "table-success"
         
-    table.appendChild(tr)
+    tbody.appendChild(tr)
