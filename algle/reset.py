@@ -14,7 +14,7 @@ class algo:
         self.space_complexity = sc
     
     def __str__(self):
-        return f'Name: {self.name}\nData Structure: {self.data_structure}\nAverage Time Complexity: {self.avg_time_complexity}\nWorst Case Time Complexity: {self.worst_time_complexity}\nSpace Complexity: {self.space_complexity}'
+        return f'Name: {self.name}\nData Structure: {self.data_structure}\nAverage Time Complexity: {self.avg_time_complexity}\nWorst Case Time Compl: {self.worst_time_complexity}\nSpace Complexity: {self.space_complexity}'
 
 # Populates the dictionary of algo objects
 def populate_options(filename):

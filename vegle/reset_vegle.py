@@ -43,10 +43,6 @@ def reset(*args):
 
     # Store guesses remaining in localStorage
     js.localStorage.setItem("guesses_remaining_chem",8)
-    
-    # !!!!!!
-    pyscript.write("count", str(veggies[random_veggie].name))
-
     # Reset count on frontend
     pyscript.write("count","8")
 
@@ -175,9 +171,6 @@ def compare_guess(*args):
         else:
             pro_td.textContent = '< ' + pro_td.textContent
         
-        
-    
-    
     tbody.appendChild(tr)
 
 # Populates the menu of available guesses
