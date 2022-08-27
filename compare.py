@@ -2,8 +2,9 @@ from random_algo import random_algo
 import js
 import math
 from populate_options import algos
+from random_algo import gc
 
-table = Element("tb").element
+tbody = Element("tb").element
 
 
 def complex_eval(o):
@@ -13,6 +14,9 @@ def complex_eval(o):
 
 
 def compare_guess(*args):
+    if Element("tbl").element.rows.length > 8:
+        return
+
     # Get guess selection
     guess = algos[int(Element("selectNumber").element.value)]
 
@@ -68,4 +72,4 @@ def compare_guess(*args):
         else:
             pass    # how tf did you get here?
         
-    table.appendChild(tr)
+    tbody.appendChild(tr)

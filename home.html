@@ -8,10 +8,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://use.typekit.net/lew5rkd.css">
     </head>
-    <body>
-        <h1>Algo-Wordle</h1>
-        <h5>Guess the Algorithm</h3>
-        <!-- Dropdown menu -->
+    <body class="container">
         <py-env>
             - paths:
                 - ./algos.csv
@@ -19,32 +16,44 @@
                 - ./random_algo.py
                 - ./compare.py
         </py-env>
-        <div class="container w-25">
-            <select id="selectNumber" class="form-select" onfocus='this.size=10;' onblur='this.size=1;' onchange='this.size=1; this.blur();'>
-                <option disabled>Select Algorithm</option>
-            </select>
+
+
+        <!-- Title -->
+        <h1>ALG<span style="color: #ff0000">LE</span></h1>
+        <h5>Guess the Algorithm</h3>
+
+        
+        <div class="grid1">
+
+            
+            <div class="grid2">
+                <!-- Dropdown menu -->
+                <div>
+                    <select id="selectNumber" class="form-select" size="15">
+                        <option disabled>Select Algorithm</option>
+                    </select>
+                    <py-script src="./dropdown.py"></py-script>
+                </div>
+
+                <!-- Guess Button -->
+                <button id="mountain" type="Submit" class="btn btn-primary" pys-onClick="compare_guess">Guess
+                    <py-script src="compare.py"></py-script>
+                </button>
+            </div>
+
+            <!-- Guess Table -->
+            <table class="table table-bordered" id="tbl">
+                <thead>
+                <tr>
+                    <th scope="col">Algorithm</th>
+                    <th scope="col">Data Structure</th>
+                    <th scope="col">Time Complexity</th>
+                    <th scope="col">Space Complexity</th>
+                </tr>
+                </thead>
+                <tbody id="tb">
+                </tbody>
+            </table>
         </div>
-        <py-script src="./dropdown.py"></py-script>
-        <!-- ---------------- -->
-
-        <!-- Guess Button -->
-        <button id="mountain" type="Submit" class="btn btn-primary" pys-onClick="compare_guess"> Guess </button>
-        <py-script src="compare.py"></py-script>
-         <!-- ---------------- -->
-
-        <div id="guess-table"></div>
-
-        <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th scope="col">Algorithm</th>
-                <th scope="col">Data Structure</th>
-                <th scope="col">Time Complexity</th>
-                <th scope="col">Space Complexity</th>
-              </tr>
-            </thead>
-            <tbody id="tb">
-            </tbody>
-        </table>
     </body>
 </html>

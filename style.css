@@ -1,9 +1,5 @@
-html, body {
-    background-color:  #15202B;
-}
-
 h1 {
-    color: white;
+    color: black;
     font-size: 100px;
     font-family: montserrat, sans-serif;
     font-style: italic;
@@ -26,7 +22,6 @@ h5 {
 select{
     width: 50%px;
     font-family: sans-serif;
-    margin-top: 8%;
     border-color: #8899A6;
     text-align: center;
 
@@ -35,4 +30,20 @@ select{
 option:hover {
     font-weight: bold;
 
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
