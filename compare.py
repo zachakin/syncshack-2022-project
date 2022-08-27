@@ -1,5 +1,3 @@
-from codecs import ascii_decode
-from random_algo import random_algo
 import js
 import math
 from populate_options import algos
@@ -16,13 +14,16 @@ def compare_complexity(guess,actual):
     return eval_guess < eval_actual
 
 def compare_guess(*args):
+    random_algo = int(js.localStorage.getItem("random_algo"))
+    
+    if js.localStorage.getItem("has_won") == "True":
+        return
 
     # Count Guesses
-    guesses_total = 8 - Element("tbl").element.rows.length
-
+    guesses_total = int(js.localStorage.getItem("guesses_remaining"))-1
+    js.localStorage.setItem("guesses_remaining",guesses_total)
     # Prints correct algorithm
     if(guesses_total == 0):
-        print(algos[random_algo].name)
         pyscript.write("answer", ("Correct answer: " + algos[random_algo].name))
     if(guesses_total < 0):
         return
@@ -61,6 +62,7 @@ def compare_guess(*args):
         ds_td.className = "bg-success"
         tc_td.className = "bg-success"
         sc_td.className = "bg-success"
+        js.localStorage.setItem("random_algo","True")
     else:
         # Incorrect guess
         if guess.data_structure == algos[random_algo].data_structure:

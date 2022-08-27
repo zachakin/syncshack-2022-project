@@ -1,5 +1,4 @@
 import csv
-from wsgiref.headers import tspecials
 
 class algo:
     def __init__(self, id_: int, name: str, ds: str, tc: str, sc: str):
@@ -11,7 +10,6 @@ class algo:
     
     def __str__(self):
         return f'Name: {self.name}\nData Structure: {self.data_structure}\nTime Complexity: {self.time_complexity}\nSpace Complexity: {self.space_complexity}'
-
 
 def populate_options(filename):
     j = 0
