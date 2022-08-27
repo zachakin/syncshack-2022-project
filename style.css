@@ -85,3 +85,22 @@ td {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
+
+#pages {
+    color:white;
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight:800;
+    display: flex;
+}
+
+#answer {
+    color:white;
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight:800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

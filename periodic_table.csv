@@ -1,0 +1,119 @@
+Element,Atomic number,Period (row),Group (column),Classification
+Hydrogen,1,1,1,Nonmetal
+Helium,2,1,18,Noble Gas
+Lithium,3,2,1,Alkali Metal
+Beryllium,4,2,2,Alkaline Earth
+Boron,5,2,13,Semimetal
+Carbon,6,2,14,Nonmetal
+Nitrogen,7,2,15,Nonmetal
+Oxygen,8,2,16,Nonmetal
+Fluorine,9,2,17,Halogen
+Neon,10,2,18,Noble Gas
+Sodium,11,3,1,Alkali Metal
+Magnesium,12,3,2,Alkaline Earth
+Aluminium,13,3,13,Basic Metal
+Silicon,14,3,14,Semimetal
+Phosphorous,15,3,15,Nonmetal
+Sulfur,16,3,16,Nonmetal
+Chlorine,17,3,17,Halogen
+Argon,18,3,18,Noble Gas
+Potassium,19,4,1,Alkali Metal
+Calcium,20,4,2,Alkaline Earth
+Scandium,21,4,3,Transition Metal
+Titanium,22,4,4,Transition Metal
+Vanadium,23,4,5,Transition Metal
+Chromium,24,4,6,Transition Metal
+Manganese,25,4,7,Transition Metal
+Iron,26,4,8,Transition Metal
+Cobalt,27,4,9,Transition Metal
+Nickel,28,4,10,Transition Metal
+Copper,29,4,11,Transition Metal
+Zinc,30,4,12,Transition Metal
+Gallium,31,4,13,Basic Metal
+Germanium,32,4,14,Semimetal
+Arsenic,33,4,15,Semimetal
+Selenium,34,4,16,Nonmetal
+Bromine,35,4,17,Halogen
+Krypton,36,4,18,Noble Gas
+Rubidium,37,5,1,Alkali Metal
+Strontium,38,5,2,Alkaline Earth
+Yttrium,39,5,3,Transition Metal
+Zirconium,40,5,4,Transition Metal
+Niobium,41,5,5,Transition Metal
+Molybdenum,42,5,6,Transition Metal
+Technetium,43,5,7,Transition Metal
+Ruthenium,44,5,8,Transition Metal
+Rhodium,45,5,9,Transition Metal
+Palladium,46,5,10,Transition Metal
+Silver,47,5,11,Transition Metal
+Cadmium,48,5,12,Transition Metal
+Indiuom,49,5,13,Basic Metal
+Tin,50,5,14,Basic Metal
+Antimony,51,5,15,Semimetal
+Tellurium,52,5,16,Semimetal
+Iodine,53,5,17,Halogen
+Xenon,54,5,18,Noble Gas
+Caesium,55,6,1,Alkali Metal
+Barium,56,6,2,Alkaline Earth
+Lanthanum,57,6,3,Lanthanide
+Cerium,58,6,3,Lanthanide
+Praseodyium,59,6,3,Lanthanide
+Neodymium,60,6,3,Lanthanide
+Promethium,61,6,3,Lanthanide
+Samarium,62,6,3,Lanthanide
+Europium,63,6,3,Lanthanide
+Gadolinium,64,6,3,Lanthanide
+Terbium,65,6,3,Lanthanide
+Dysprosium,66,6,3,Lanthanide
+Holmium,67,6,3,Lanthanide
+Erbium,68,6,3,Lanthanide
+Thulium,69,6,3,Lanthanide
+Ytterbium,70,6,3,Lanthanide
+Lutetium,71,6,3,Lanthanide
+Hafnium,72,6,4,Transition Metal
+Tantalum,73,6,5,Transition Metal
+Tungsten,74,6,6,Transition Metal
+Rhenium,75,6,7,Transition Metal
+Osmium,76,6,8,Transition Metal
+Iridium,77,6,9,Transition Metal
+Platinum,78,6,10,Transition Metal
+Gold,79,6,11,Transition Metal
+Mercury,80,6,12,Transition Metal
+Thallium,81,6,13,Basic Metal
+Lead,82,6,14,Basic Metal
+Bismuth,83,6,15,Basic Metal
+Polonium,84,6,16,Semimetal
+Astatine,85,6,17,Halogen
+Radon,86,6,18,Noble Gas
+Francium,87,7,1,Alkali Metal
+Radium,88,7,2,Alkaline Earth
+Actinium,89,7,3,Actinide
+Thorium,90,7,3,Actinide
+Protactinium,91,7,3,Actinide
+Uranium,92,7,3,Actinide
+Neptunium,93,7,3,Actinide
+Plutonium,94,7,3,Actinide
+Americium,95,7,3,Actinide
+Curium,96,7,3,Actinide
+Berkelium,97,7,3,Actinide
+Californium,98,7,3,Actinide
+Einsteinium,99,7,3,Actinide
+Fermium,100,7,3,Actinide
+Mendelevium,101,7,3,Actinide
+Nobelium,102,7,3,Actinide
+Lawrencium,103,7,3,Actinide
+Rutherfordium,104,7,4,Transition Metal
+Dubnium,105,7,5,Transition Metal
+Seaborgium,106,7,6,Transition Metal
+Bohrium,107,7,7,Transition Metal
+Hassium,108,7,8,Transition Metal
+Meitnerium,109,7,9,Transition Metal
+Darmstadtium,110,7,10,Transition Metal
+Roentgenium,111,7,11,Transition Metal
+Copernicium,112,7,12,Transition Metal
+Nihonium,113,7,13,Basic Metal
+Flerovium,114,7,14,Basic Metal
+Moscovium,115,7,15,Basic Metal
+Livermorium,116,7,16,Basic Metal
+Tenessine,117,7,17,Halogen
+Oganesson,118,7,18,Noble Gas

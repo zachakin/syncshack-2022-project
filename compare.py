@@ -19,6 +19,11 @@ def compare_guess(*args):
 
     # Count Guesses
     guesses_total = 8 - Element("tbl").element.rows.length
+
+    # Prints correct algorithm
+    if(guesses_total == 0):
+        print(algos[random_algo].name)
+        pyscript.write("answer", ("Correct answer: " + algos[random_algo].name))
     if(guesses_total < 0):
         return
     guesses_string = str(guesses_total)
