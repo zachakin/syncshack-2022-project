@@ -1,9 +1,62 @@
+import random
 import js
 import math
-from populate_options import algos
+import csv
+
+# Class for each algorithm
+class algo:
+    def __init__(self, id_: int, name: str, ds: str, tc: str, sc: str):
+        self.id = id_
+        self.name = name
+        self.data_structure = ds
+        self.time_complexity = tc
+        self.space_complexity = sc
+    
+    def __str__(self):
+        return f'Name: {self.name}\nData Structure: {self.data_structure}\nTime Complexity: {self.time_complexity}\nSpace Complexity: {self.space_complexity}'
+
+# Populates the dictionary of algo objects
+def populate_options(filename):
+    j = 0
+    output = dict()
+    with open(filename,'r') as f:
+        reader = csv.reader(f)
+        next(reader,None)
+        for i in reader:
+            a = algo(j,i[0],i[1],i[2],i[3])
+            output[j] = a
+            j += 1
+    return output
+
+algos = populate_options('./algos.csv')
+
+# Resets the game
+def reset(*args):
+    # Get new random number that represents key of algorithm in dictionary
+    r = list(range(len(algos)+1))
+    random_algo = random.choice(r)
+    # Store that random number in localStorage
+    js.localStorage.setItem("random_algo", random_algo)
+
+    # Store guesses remaining in localStorage
+    js.localStorage.setItem("guesses_remaining",8)
+    # Reset count on frontend
+    pyscript.write("count","8")
+
+    # Store has_won in localStorage
+    js.localStorage.setItem("has_won","False")
+   
+    # Reset table
+    tb = js.document.getElementById("tb")
+    tb.innerHTML = ""
+
+    # Reset answer
+    answer = js.document.getElementById("answer")
+    answer.innerHTML = ""
 
 tbody = Element("tb").element
 
+# Function to compare big O complexities
 def compare_complexity(guess,actual):
     # Returns 1 if guess is faster than actual
     # Returns 0 if guess is slower than actual
@@ -13,6 +66,7 @@ def compare_complexity(guess,actual):
     eval_actual = eval(o_actual)
     return eval_guess < eval_actual
 
+# Compares guess to the random algorithm
 def compare_guess(*args):
     random_algo = int(js.localStorage.getItem("random_algo"))
     
@@ -89,3 +143,16 @@ def compare_guess(*args):
             sc_td.textContent = '< ' + sc_td.textContent
         
     tbody.appendChild(tr)
+
+# Populates the menu of available guesses
+def dropdown():
+    select = Element("selectNumber").element
+
+    for k,v in algos.items():
+        el = js.document.createElement("option")
+        el.textContent = v.name
+        el.value = k
+        select.appendChild(el)
+
+reset()
+dropdown()
