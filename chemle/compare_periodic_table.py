@@ -6,16 +6,6 @@ from populate_options_chemle import periodic_table
 
 tbody = Element("tb").element
 
-def compare_complexity(guess,actual):
-    # Returns 1 if guess is faster than actual
-    # Returns 0 if guess is slower than actual
-    # o_guess = guess[2:len(guess) - 1].replace("^", "**").replace("n", "10000").replace("log", "math.log")
-    # o_actual = actual[2:len(actual) - 1].replace("^", "**").replace("n", "10000").replace("log", "math.log")
-    # eval_guess = eval(o_guess)
-    # eval_actual = eval(o_actual)
-    # return eval_guess < eval_actual
-    pass
-
 def compare_guess(*args):
 
     # Count Guesses
@@ -72,12 +62,24 @@ def compare_guess(*args):
         # Incorrect guess
         if guess.atomic_number == periodic_table[random_periodic_table].atomic_number:
             an_td.className = "bg-success"
+        elif int(guess.atomic_number) < int(periodic_table[random_periodic_table].atomic_number):
+            an_td.textContent = '> ' + an_td.textContent
+        else:
+            an_td.textContent = '< ' + an_td.textContent
         
         if guess.period == periodic_table[random_periodic_table].period:
             p_td.className = "bg-success"
+        elif int(guess.period) < int(periodic_table[random_periodic_table].period):
+            p_td.textContent = '> ' + p_td.textContent
+        else:
+            p_td.textContent = '< ' + p_td.textContent
         
         if guess.group == periodic_table[random_periodic_table].group:
             g_td.className = "bg-success"
+        elif int(guess.group) < int(periodic_table[random_periodic_table].group):
+            g_td.textContent = '> ' + g_td.textContent
+        else:
+            g_td.textContent = '< ' + g_td.textContent
 
         if guess.classification == periodic_table[random_periodic_table].classification:
             cl_td.className = "bg-success"
