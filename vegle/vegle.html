@@ -11,19 +11,19 @@
     </head>
     <py-env>
         - paths:
-            - ./algos.csv
+            - ./veggies.csv
     </py-env>
-    <py-script src="reset.py"></py-script>
+    <py-script src="reset_vegle.py"></py-script>
     <nav class="navbar">
 
         <div class="navbar">
-            <a id="pages" class="navbar-brand" href="./home.html">ALGLE</a>
+            <a id="pages" class="navbar-brand" href="../algle/home.html">ALGLE</a>
             <a id="pages" class="navbar-brand" href="../chemle/chemle.html">CHEMLE</a>
-            <a id="pages" class="navbar-brand" href="../vegle/vegle.html">VEGLE</a>
+            <a id="pages" class="navbar-brand" href="./vegle.html">VEGLE</a>
         </div>
-        
-        <!-- Toggle Light/Dark Mode -->
-        <button class="btn btn-primary" onclick="toggle_light()">Toggle Light/Dark Mode</button>
+      
+      <!-- Toggle Light/Dark Mode -->
+      <button class="btn btn-primary" onclick="toggle_light()">Toggle Light/Dark Mode</button>
 
     </nav>
     <body class="container">
@@ -35,8 +35,8 @@
 
             <div>
                 <!-- Title -->
-                <h1>ALG<span style="color: #ff0000">LE</span></h1>
-                <h5>Guess the Algorithm</h3>
+                <h1>VEG<span style="color: #ff0000">LE</span></h1>
+                <h5>Guess the Vegetable</h3>
             </div>
             <div id="counter">
                 <button id="reset" class="btn btn-primary" pys-onClick="reset">
@@ -54,7 +54,7 @@
                 </div>
 
                 <!-- Guess Button -->
-                <button id="mountain" type="Submit" class="btn btn-primary" pys-onClick="compare_guess">
+                <button id="mountain" type="Submit" class="btn btn-primary" pys-onClick="compare_guess">Guess
                     Guess
                 </button>
             </div>
@@ -63,11 +63,13 @@
             <div>
             <table class="table table-bordered" id="tbl">
                 <thead>
-                    <th scope="col">Algorithm</th>
-                    <th scope="col">Data Structure</th>
-                    <th scope="col">Avg Time Complexity</th>
-                    <th scope="col">Worst Case Time Complexity</th>
-                    <th scope="col">Space Complexity</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Calories</th>
+                    <th scope="col">Carbs</th>
+                    <th scope="col">Fiber</th>
+                    <th scope="col">Sugar</th>
+                    <th scope="col">Fat</th>
+                    <th scope="col">Protein</th>
                 </thead>
                 <tbody id="tb">
                 </tbody>
