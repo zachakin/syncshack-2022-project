@@ -12,16 +12,14 @@
     <py-env>
         - paths:
             - ./algos.csv
-            - ./reset.py
-            - ./populate_options.py
     </py-env>
     <py-script src="reset.py"></py-script>
     <nav class="navbar">
 
-          <div class="navbar">
+        <div class="navbar">
             <a id="pages" class="navbar-brand" href="./home.html">ALGLE</a>
             <a id="pages" class="navbar-brand" href="../chemle/chemle.html">CHEMLE</a>
-          </div>
+        </div>
         
         <!-- Toggle Light/Dark Mode -->
         <button class="btn btn-primary" onclick="toggle_light()">Toggle Light/Dark Mode</button>
@@ -42,7 +40,6 @@
             <div id="counter">
                 <button id="reset" class="btn btn-primary" pys-onClick="reset">
                     New Game
-                    <py-script src="reset.py"></py-script>
                 </button>
             </div>    
         </div>
@@ -53,12 +50,11 @@
                 <!-- Dropdown menu -->
                 <div>
                     <select id="selectNumber" class="form-select" size="15"></select>
-                    <py-script src="./dropdown.py"></py-script>
                 </div>
 
                 <!-- Guess Button -->
-                <button id="mountain" type="Submit" class="btn btn-primary" pys-onClick="compare_guess">Guess
-                    <py-script src="compare.py"></py-script>
+                <button id="mountain" type="Submit" class="btn btn-primary" pys-onClick="compare_guess">
+                    Guess
                 </button>
             </div>
 
