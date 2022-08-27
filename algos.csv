@@ -1,0 +1,13 @@
+Name,Data Structure,Time Complexity
+Bubble Sort,Array,O(n^2)
+Insertion sort,Array,O(n^2)
+Merge sort,Array,O(n log(n))
+QuickSort,Array,O(n^2)
+binary search (BST),Binary Search Tree,O(log(n))
+binary search (Array),Sorted Array,O(log(n))
+linear search,Array,O(n)
+interpolation search,Sorted Array,O(n)
+exponential search,Sorted Array,O(i)
+ternary search,Sorted Array,O(log3(n))
+fibonacci search,Sorted Array,log(n)
+jump search,Sorted Array,O(sqrt(n))
