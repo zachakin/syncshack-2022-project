@@ -1,0 +1,38 @@
+html, body {
+    background-color:  #15202B;
+}
+
+h1 {
+    color: white;
+    font-size: 100px;
+    font-family: montserrat, sans-serif;
+    font-style: italic;
+    font-weight:800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h5 {
+    color: #8899A6;
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight:800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select{
+    width: 50%px;
+    font-family: sans-serif;
+    margin-top: 8%;
+    border-color: #8899A6;
+    text-align: center;
+
+}
+
+option:hover {
+    font-weight: bold;
+
+}
