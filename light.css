@@ -1,5 +1,5 @@
 body {
-    background-color:  #15202B;
+    background-color: white;
 }
 
 h1 {
@@ -14,7 +14,7 @@ h1 {
 }
 
 h5 {
-    color: #8899A6;
+    color: black;
     font-family: montserrat, sans-serif;
     font-style: normal;
     font-weight:800;
@@ -24,8 +24,9 @@ h5 {
 }
 
 select{
-    width: 50%px;
+    width: 50%;
     font-family: sans-serif;
+    margin-top: 8%;
     border-color: #8899A6;
     text-align: center;
 }
@@ -41,29 +42,15 @@ option:hover {
 }
 
 th {
-    color: #8899A6;
+    color: black;
     font-family: montserrat, sans-serif;
 }
 
 td {
-    color: white;
+    color: black;
     font-family: montserrat, sans-serif 
 }
 
 #count {
-    color:white
-    
-.grid1 {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    color:black
 }
-
-.grid2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;

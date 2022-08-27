@@ -16,9 +16,15 @@ def compare_complexity(guess,actual):
     return eval_guess < eval_actual
 
 def compare_guess(*args):
-    if Element("tbl").element.rows.length > 8:
-        return
 
+    # Count Guesses
+    guesses_total = Element("tbl").element.rows.length
+    if(guesses_total > 8):
+        print("Game Over")
+        return
+    guesses_string = str(guesses_total) + "/8"
+    pyscript.write("count", guesses_string)
+    
     # Get guess selection
     guess = algos[int(Element("selectNumber").element.value)]
 
@@ -47,17 +53,17 @@ def compare_guess(*args):
     
     if guess.id == algos[random_algo].id:
         # Correct guess
-        name_td.className = "table-success"
-        ds_td.className = "table-success"
-        tc_td.className = "table-success"
-        sc_td.className = "table-success"
+        name_td.className = "bg-success"
+        ds_td.className = "bg-success"
+        tc_td.className = "bg-success"
+        sc_td.className = "bg-success"
     else:
         # Incorrect guess
         if guess.data_structure == algos[random_algo].data_structure:
-            ds_td.className = "table-success"
+            ds_td.className = "bg-success"
         
         if guess.time_complexity == algos[random_algo].time_complexity:
-            tc_td.className = "table-success"
+            tc_td.className = "bg-success"
         elif compare_complexity(guess.time_complexity,algos[random_algo].time_complexity):
             # time complexity of guess is better than of actual
             # Down arrow: U+021E9
@@ -68,7 +74,7 @@ def compare_guess(*args):
             tc_td.textContent = '< ' + tc_td.textContent
 
         if guess.space_complexity == algos[random_algo].space_complexity:
-            sc_td.className = "table-success"
+            sc_td.className = "bg-success"
         elif compare_complexity(guess.space_complexity,algos[random_algo].space_complexity):
             # time complexity of guess is better than of actual
             sc_td.textContent = '> ' + sc_td.textContent
