@@ -14,12 +14,17 @@ def compare_complexity(guess,actual):
     return eval_guess < eval_actual
 
 def compare_guess(*args):
-    if js.localStorage.getItem("random_algo") == "True":
+    random_algo = int(js.localStorage.getItem("random_algo"))
+    
+    if js.localStorage.getItem("has_won") == "True":
         return
 
     # Count Guesses
     guesses_total = int(js.localStorage.getItem("guesses_remaining"))-1
     js.localStorage.setItem("guesses_remaining",guesses_total)
+    # Prints correct algorithm
+    if(guesses_total == 0):
+        pyscript.write("answer", ("Correct answer: " + algos[random_algo].name))
     if(guesses_total < 0):
         return
     guesses_string = str(guesses_total)
@@ -51,7 +56,6 @@ def compare_guess(*args):
     tr.appendChild(tc_td)
     tr.appendChild(sc_td)
     
-    random_algo = int(js.localStorage.getItem("random_algo"))
     if guess.id == algos[random_algo].id:
         # Correct guess
         name_td.className = "bg-success"
