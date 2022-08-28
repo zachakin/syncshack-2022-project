@@ -1,1 +1,1 @@
-<?php include_once("./algle/home.html"); ?>
+<?php include_once("home.html"); ?>
