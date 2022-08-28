@@ -26,13 +26,14 @@ def populate_options(filename):
 functions = populate_options('./maths.csv')
 
 import matplotlib.pyplot as plt
+import numpy as np
 def mpl():
     random_algo = int(js.localStorage.getItem("random_algo"))
     func = functions[random_algo].eval
 
-    x = list(range(1,101))
+    x = np.arange(1,101,0.1)
     y = []
-    for i in range(1,101):
+    for i in x:
         val = eval(func.replace('x',str(i)))
         y.append(val)
     
