@@ -116,7 +116,7 @@ def compare_guess(*args):
         p_td.className = "bg-success"
         g_td.className = "bg-success"
         cl_td.className = "bg-success"
-
+        js.localStorage.setItem("has_won_chem","True")
     else:
         # Incorrect guess
         if guess.atomic_number == elements[random_element].atomic_number:
