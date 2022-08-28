@@ -1,0 +1,18 @@
+x,x
+x^2,x**2
+x^3,x**3
+sin(x),math.sin(x)
+cos(x),math.cos(x)
+sqrt(x),math.sqrt(x)
+log(x),math.log(x)
+e^x,math.e**x
+x^x,x**x
+1/x,1/x
+1/x^2,1/x**2
+|x|,abs(x)
+tan(x),math.tan(x)
+x^sin(x),x**math.sin(x)
+tan(x^x),math.tan(x**x)
+x*log(x),x*math.log(x)
+x + e^sin(x),x+math.e**(math.sin(x))
+cos(x)/x,math.cos(x)/x
