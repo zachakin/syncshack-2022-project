@@ -120,6 +120,8 @@ td {
 
 .btn {
     font-family: montserrat, sans-serif;
+    border: none; 
+    outline: none;
 }
 
 #toggle{
