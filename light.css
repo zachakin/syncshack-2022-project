@@ -6,7 +6,6 @@ h1 {
     color: black;
     font-size: 100px;
     font-family: montserrat, sans-serif;
-    font-style: italic;
     font-weight:800;
     display: flex;
     justify-content: center;
@@ -117,4 +116,18 @@ td {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+}
+
+.btn {
+    font-family: montserrat, sans-serif;
+}
+
+#toggle{
+    font-weight: 600;
+    font-size: 1em;
+}
+
+#mountain, #reset {
+    font-weight: 700;
+    font-size: 2em;
 }
