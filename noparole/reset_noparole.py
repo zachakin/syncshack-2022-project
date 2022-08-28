@@ -126,36 +126,36 @@ def compare_guess(*args):
 
     else:
         
-        if guess.start == psychos[random_psycho].start:
+        if int(guess.start) == int(psychos[random_psycho].start):
             start_td.className = "bg-success"
-        elif guess.start < psychos[random_psycho].start:
+        elif int(guess.start) < int(psychos[random_psycho].start):
             start_td.textContent = '> ' + start_td.textContent
         else:
-            start_td.textContent = '> ' + start_td.textContent
+            start_td.textContent = '< ' + start_td.textContent
         
-        if guess.lives == psychos[random_psycho].lives:
+        if int(guess.lives) == int(psychos[random_psycho].lives):
             lives_td.className = "bg-success"
-        elif guess.lives < psychos[random_psycho].lives:
+        elif int(guess.lives) < int(psychos[random_psycho].lives):
             lives_td.textContent = '> ' + lives_td.textContent
         else:
-            lives_td.textContent = '> ' + lives_td.textContent
+            lives_td.textContent = '< ' + lives_td.textContent
 
-        if guess.years == psychos[random_psycho].years:
+        if int(guess.years) == int(psychos[random_psycho].years):
             years_td.className = "bg-success"
-        elif guess.years < psychos[random_psycho].years:
+        elif int(guess.years) < int(psychos[random_psycho].years):
             years_td.textContent = '> ' + years_td.textContent
         else:
-            years_td.textContent = '> ' + years_td.textContent
+            years_td.textContent = '< ' + years_td.textContent
         
         if guess.country == psychos[random_psycho].start:
             start_td.className = "bg-success"
         
-        if guess.victims == psychos[random_psycho].victims:
+        if int(guess.victims) == int(psychos[random_psycho].victims):
             victims_td.className = "bg-success"
-        elif guess.victims < psychos[random_psycho].victims:
+        elif int(guess.victims) < int(psychos[random_psycho].victims):
             victims_td.textContent = '> ' + victims_td.textContent
         else:
-            victims_td.textContent = '> ' + victims_td.textContent
+            victims_td.textContent = '< ' + victims_td.textContent
 
     
         
