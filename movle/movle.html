@@ -11,17 +11,16 @@
     </head>
     <py-env>
         - paths:
-            - ./elements.csv
+            - ./movies.csv
     </py-env>
-    <py-script src="reset_chemle.py"></py-script>
+    <py-script src="reset_movle.py"></py-script>
     <nav class="navbar">
 
         <div class="navbar">
             <a id="pages" class="navbar-brand" href="../algle/home.html">ALGLE</a>
-            <a id="pages" class="navbar-brand" href="../mathsle/maths.html">MATHSLE</a>
-            <a id="pages" class="navbar-brand" href="./chemle.html">CHEMLE</a>
+            <a id="pages" class="navbar-brand" href="../chemle/chemle.html">CHEMLE</a>
             <a id="pages" class="navbar-brand" href="../vegle/vegle.html">VEGLE</a>
-            <a id="pages" class="navbar-brand" href="../movle/movle.html">MOVLE</a>
+            <a id="pages" class="navbar-brand" href="./movle.html">MOVLE</a>
         </div>
       
       <!-- Toggle Light/Dark Mode -->
@@ -37,8 +36,8 @@
 
             <div>
                 <!-- Title -->
-                <h1>CHEM<span style="color: #ff0000">LE</span></h1>
-                <h5>Guess the Element</h3>
+                <h1>MOV<span style="color: #ff0000">LE</span></h1>
+                <h5>Guess the Movie</h3>
             </div>
             <div id="counter">
                 <button id="reset" class="btn btn-primary" pys-onClick="reset">
@@ -65,11 +64,12 @@
             <div>
             <table class="table table-bordered" id="tbl">
                 <thead>
-                    <th scope="col">Element</th>
-                    <th scope="col">Atomic Number</th>
-                    <th scope="col">Period (row)</th>
-                    <th scope="col">Group (column)</th>
-                    <th scope="col">Classification</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Runtime</th>
+                    <th scope="col">Release Year</th>
+                    <th scope="col">Oscars</th>
+                    <th scope="col">BAFTAs</th>
+                    <th scope="col">Golden Globes</th>
                 </thead>
                 <tbody id="tb">
                 </tbody>
